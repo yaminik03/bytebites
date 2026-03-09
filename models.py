@@ -30,7 +30,7 @@ class MenuItem:
     """Represents a sellable item (name, price, category, popularity_rating)."""
     def __init__(self, name: str, price: float, category: str, popularity_rating: int):
         self.name: str = name
-        self.price: float = price
+        self.price: float = float(price)
         self.category: str = category
         self.popularity_rating: int = popularity_rating
 
